@@ -5,5 +5,13 @@ window.onload = function() {
   };
   
 //created a new input file (Other Job) and hid it
-const otherJob = document.querySelector("#otherTitle");
+const otherJob = document.querySelector("#other-title");
 otherJob.style.display = "none";
+
+const title = document.querySelector("#title");
+if (title.value ==="other") {
+    otherJob.style.display = "show";
+}
+
+
+
