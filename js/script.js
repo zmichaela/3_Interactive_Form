@@ -14,4 +14,17 @@ if (title.value ==="other") {
 }
 
 
+//tshirt section
 
+//hide select theme option
+const select = document.querySelector("#design");
+select.style.display = "none";
+
+//updated the “Color” field to read “Please select a T-shirt theme”.
+//const color = document.querySelector("#color");
+//color.options = "none";
+
+//hide the colors in the “Color” drop down menu.
+
+
+/*
