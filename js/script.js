@@ -14,18 +14,35 @@ if (title.value ==="other") {
 }
 
 
-//tshirt section
-//hide select theme option
-const select = document.querySelector("#design");
-select.style.display = "none";
+//Tshirt section
+//Hide select theme option
+const design = document.querySelector("#design");
+design[0].style.display = "none";
 
-//updated the “Color” field to read “Please select a T-shirt theme”.
+//Update the “Color” field to read “Please select a T-shirt theme”.
 const color = document.querySelector("#color");
 color[0].innerText = "Please select a T-shirt theme";
 
-//hide the colors in the “Color” drop down menu.
+//Hide the colors in the “Color” drop down menu.
 for (let i = 1; i < color.length; i++) {
   color[i].style.display= "none";
+}
+
+//Show & hide options
+if (design.value == "js puns") {
+  for (let i = 3; i < color.length; i++) {
+    color.style.diplay = "block";
+    color[i].style.display = "none";
+    color[0].style.display = color[1];
+  }
+}  
+
+if (design.value == "heart js") {
+  for (let j = 0; j < 3; j++) {
+    color[j].style.display = "none";
+    color[0].style.display = color[1];
+  
+  }
 }
 
 
@@ -42,7 +59,7 @@ totalCost.textContent= `Total Cost: £${cost}`;
 
 
 
-
+//
 
 //payment info
 
