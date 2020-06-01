@@ -15,16 +15,37 @@ if (title.value ==="other") {
 
 
 //tshirt section
-
 //hide select theme option
 const select = document.querySelector("#design");
 select.style.display = "none";
 
 //updated the “Color” field to read “Please select a T-shirt theme”.
-//const color = document.querySelector("#color");
-//color.options = "none";
+const color = document.querySelector("#color");
+color[0].innerText = "Please select a T-shirt theme";
 
 //hide the colors in the “Color” drop down menu.
+for (let i = 1; i < color.length; i++) {
+  color[i].style.display= "none";
+}
 
 
-/*
+//register for activities
+
+//Create an element to display the total activity cost
+let cost = 0;
+let totalCost = document.createElement("div");
+let activities = document.querySelector(".activities");
+activities.appendChild(totalCost);
+totalCost.textContent= `Total Cost: £${cost}`;
+
+
+
+
+
+
+
+//payment info
+
+
+
+//
